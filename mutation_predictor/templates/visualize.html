@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Visualization</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{ url_for('static', filename='js/charts.js') }}"></script>
+</head>
+
+<body class="dark-bg">
+<div class="glass-card">
+
+    <h2 class="neon-title">Prediction Confidence</h2>
+
+    <canvas id="scoreChart"
+            data-score="{{ result.Score }}"
+            height="130"></canvas>
+
+    <a href="/predictor" class="btn-outline">Analyze Another Sequence</a>
+
+</div>
+</body>
+</html>

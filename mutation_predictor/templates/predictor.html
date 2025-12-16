@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mutation Effect Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="dark-bg">
+<div class="glass-card wide">
+
+    <h2 class="neon-title">Mutation Effect Predictor</h2>
+
+    <form method="POST" action="{{ url_for('analyze') }}" class="form">
+
+        <label>Reference Sequence</label>
+        <textarea name="reference" rows="5" required></textarea>
+
+        <label>Query (Mutated) Sequence</label>
+        <textarea name="sequence" rows="5" required></textarea>
+
+        <button type="submit" class="btn-glow">Predict Mutation Effect</button>
+    </form>
+
+</div>
+</body>
+</html>

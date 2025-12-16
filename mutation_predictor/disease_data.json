@@ -1,0 +1,16 @@
+{
+  "Protein": {
+    "R175H": {
+      "disease": "Li-Fraumeni syndrome / Cancer",
+      "clinical_significance": "Pathogenic"
+    },
+    "G12D": {
+      "disease": "Pancreatic / Colon cancer",
+      "clinical_significance": "Pathogenic"
+    },
+    "V600E": {
+      "disease": "Melanoma / Thyroid cancer",
+      "clinical_significance": "Pathogenic"
+    }
+  }
+}

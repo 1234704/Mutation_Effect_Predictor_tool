@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mutation Summary</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="dark-bg">
+<div class="glass-card wide">
+
+    <h2 class="neon-title">Mutation Effect Prediction Results</h2>
+
+    <table class="result-table">
+        <tr>
+            <th>Position</th>
+            <th>Ref</th>
+            <th>Mut</th>
+            <th>Type</th>
+            <th>Score</th>
+            <th>Pathogenicity</th>
+            <th>Disease</th>
+            <th>Clinical Significance</th>
+            <th>CNV</th>
+        </tr>
+        <tr>
+            <td>{{ result.Position }}</td>
+            <td>{{ result.Ref }}</td>
+            <td>{{ result.Mut }}</td>
+            <td>{{ result.Type }}</td>
+            <td>{{ result.Score }}</td>
+            <td>{{ result.Pathogenicity }}</td>
+            <td>{{ result.Disease }}</td>
+            <td>{{ result.Clinical }}</td>
+            <td>{{ result.CNV }}</td>
+        </tr>
+    </table>
+
+    <div class="action-row">
+        <a href="/visualize" class="btn-glow">Visualize Prediction →</a>
+        <a href="/download" class="btn-outline">Download PDF</a>
+    </div>
+
+</div>
+</body>
+</html>
